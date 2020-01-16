@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+p.pos_fixed{
+position:fixed;
+top:50px;
+
+color:blue;
+}
+p.pos_static{
+position:static;
+top:50px;
+right:5px;
+color:blue;
+}
+p.pos_left{
+position:relative;
+left:30px;
+}
+p.pos_right{
+position:relative;
+left:-30px;
+}
+p.pos_abs{
+position:absolute;
+top:250px;
+left:150px;
+color:blue;
+}
+</style>
+</head>
+<body>
+<p> Some text.....</p><p>some text.....,</p>
+<p class="pos_fixed">This is the fixed positioned text</p>
+<p> Some text.....</p><p>some text.....,</p>
+<p class="pos_static">This is the static positioned text</p>
+<p class="pos_left">This is the relative positioned text</p>
+<p class="pos_right">This is the relative positioned text</p>
+<p class="pos_abs">This is the absolute positioned text</p>
+</body>
+</html>

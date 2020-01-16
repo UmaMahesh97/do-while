@@ -1,0 +1,20 @@
+<html>
+<head>
+<style>
+body{
+counter-reset:section;
+}
+h2::before{
+counter-increment: section;
+counter:"Section" counter(section) ": ";
+}
+</style>
+</head>
+<body>
+<h1>example of css counter</h1>
+<h2>html5</h2>
+<h2>javascript</h2>
+<p><strong>Note</strong>TE8 supports these properties only if a !doctype is specified</p>
+
+</body>
+</html>

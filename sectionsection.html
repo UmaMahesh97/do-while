@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+body{
+counter-reset:section;
+}
+h1{
+counter-reset:subsection;
+}
+h1::before {
+counter-increment:section;
+  content: "Section " counter(section) ": ";
+}
+h1::after {
+counter-increment:subsection;
+  content: "Section " counter(section) ": ";
+}
+h2::before {
+counter-increment: subsection;
+  content:counter(section)"."  counter(section) " ";
+}
+h2::after {
+counter-increment:subsection;
+  content:counter(section)"."  counter(section) ": ";
+}
+</style>
+</head>
+<body>
+<h1>Java Technology</h1>
+<h2>Core java</h2>
+<h2>Core jav</h2>
+<h2>Core java</h2>
+<h2>Core java</h2>
+</body>
+</html>
+
