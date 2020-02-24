@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class collectionproblemfour {
+public static void main(String[] args) {
+String s1="this";
+int n=1;
+System.out.println(reshape(s1,n));
+
+}
+
+public static String reshape(String s1,int n)
+{
+int n1=2*n;
+String s=new String();
+if(s1.length()>n1)
+{
+s=s1.substring(0,n)+s1.substring(s1.length()-n,s1.length());
+return s;
+}
+else
+{
+return null;
+}
+}
+}
